@@ -15,17 +15,19 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 public class MainActivity extends AppCompatActivity {
-    private Button Email;
+
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-    }
-
-    public void  Email (View view) throws UnsupportedEncodingException {
+        setContentView(R.layout.activity_main); //ve a tela
 
     }
+
+    public void  Email (View view) {
+        startActivity(new Intent(MainActivity.this, EmailActivity.class));
+    }
+
     public void Internet (View view){
 
     }

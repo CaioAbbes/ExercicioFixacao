@@ -1,21 +1,22 @@
 package com.example.exerciciofixacao;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-public class Email extends AppCompatActivity {
+public class EmailActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_email);
     }
-
     public void enviarEmail(View view) throws UnsupportedEncodingException {
 
         //formata o conteúdo do email
@@ -30,5 +31,6 @@ public class Email extends AppCompatActivity {
         it.setData(uri);
         //Inicia a activity para enviar o email
         startActivity(Intent.createChooser(it, "Enviar Email"));
+
     }
 }
