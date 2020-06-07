@@ -2,10 +2,11 @@
     <string name="app_name">ExercicioFixacao</string>
     <string name="txtEscolha">Escolha um botão</string>
     <string name="btEmail">Email</string>
-    <string name="btTelefone">Telefone</string>
+    <string name="btBusca">Busca</string>
     <string name="btNavegacao">Navegacao</string>
     <string name="txtDestinatario">Destinatário</string>
     <string name="txtAssunto">Assunto</string>
     <string name="txtTexto">Texto</string>
     <string name="btnEmail">Enviar Email</string>
+    <string name="btBuscar">Buscar</string>
 </resources>

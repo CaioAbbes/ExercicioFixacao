@@ -32,10 +32,11 @@
         app:layout_constraintVertical_bias="0.459" />
 
     <Button
-        android:id="@+id/btTelefone"
+        android:id="@+id/btBusca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btTelefone"
+        android:onClick="Busca"
+        android:text="@string/btBusca"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -47,6 +48,7 @@
         android:id="@+id/btNavegacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="Navegacao"
         android:text="@string/btNavegacao"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -2,6 +2,7 @@ package com.example.exerciciofixacao;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.SearchManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -28,10 +29,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, EmailActivity.class));
     }
 
-    public void Internet (View view){
-
+    public void Busca (View view){
+        Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
+        String query = "Museu de Arte de São Paulo";
+        intent.putExtra(SearchManager.QUERY, query);
+        startActivity(intent);
     }
     public void Navegacao (View view){
-
+        Uri location= Uri.parse("geo:0,0?q=Museu+de+Arte+de+São+Paulo+Assis+Chateaubriand");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+        startActivity(mapIntent );
     }
 }
