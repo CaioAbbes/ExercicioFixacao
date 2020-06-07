@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Busca (View view){
         Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-        String query = "Museu de Arte de São Paulo";
+        String query = "Museu de Arte de São Paulo ";
         intent.putExtra(SearchManager.QUERY, query);
         startActivity(intent);
     }
